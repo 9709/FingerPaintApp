@@ -7,17 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "LineSegmentDataModel.h"
+#import "PalletView.h"
+
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet PalletView *palletView;
+
 @end
+
+
+
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)clear {
+    [self.palletView clear];
 }
-
 
 @end

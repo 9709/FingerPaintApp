@@ -15,6 +15,8 @@
 		171CC4F221F2C5B300F39B09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CC4F121F2C5B300F39B09 /* main.m */; };
 		171CC4FC21F2C5B300F39B09 /* FingerPaintAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CC4FB21F2C5B300F39B09 /* FingerPaintAppTests.m */; };
 		171CC50721F2C5B300F39B09 /* FingerPaintAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CC50621F2C5B300F39B09 /* FingerPaintAppUITests.m */; };
+		171CC51621F2CB5400F39B09 /* LineSegmentDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CC51521F2CB5400F39B09 /* LineSegmentDataModel.m */; };
+		171CC51921F2E8BE00F39B09 /* PalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CC51821F2E8BE00F39B09 /* PalletView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		171CC50221F2C5B300F39B09 /* FingerPaintAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingerPaintAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		171CC50621F2C5B300F39B09 /* FingerPaintAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingerPaintAppUITests.m; sourceTree = "<group>"; };
 		171CC50821F2C5B300F39B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171CC51421F2CB5400F39B09 /* LineSegmentDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineSegmentDataModel.h; sourceTree = "<group>"; };
+		171CC51521F2CB5400F39B09 /* LineSegmentDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineSegmentDataModel.m; sourceTree = "<group>"; };
+		171CC51721F2E8BE00F39B09 /* PalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PalletView.h; sourceTree = "<group>"; };
+		171CC51821F2E8BE00F39B09 /* PalletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalletView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				171CC4E321F2C5B200F39B09 /* AppDelegate.m */,
 				171CC4E521F2C5B200F39B09 /* ViewController.h */,
 				171CC4E621F2C5B200F39B09 /* ViewController.m */,
+				171CC51721F2E8BE00F39B09 /* PalletView.h */,
+				171CC51821F2E8BE00F39B09 /* PalletView.m */,
+				171CC51421F2CB5400F39B09 /* LineSegmentDataModel.h */,
+				171CC51521F2CB5400F39B09 /* LineSegmentDataModel.m */,
 				171CC4E821F2C5B200F39B09 /* Main.storyboard */,
 				171CC4EB21F2C5B300F39B09 /* Assets.xcassets */,
 				171CC4ED21F2C5B300F39B09 /* LaunchScreen.storyboard */,
@@ -263,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				171CC4E721F2C5B200F39B09 /* ViewController.m in Sources */,
+				171CC51921F2E8BE00F39B09 /* PalletView.m in Sources */,
 				171CC4F221F2C5B300F39B09 /* main.m in Sources */,
 				171CC4E421F2C5B200F39B09 /* AppDelegate.m in Sources */,
+				171CC51621F2CB5400F39B09 /* LineSegmentDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
