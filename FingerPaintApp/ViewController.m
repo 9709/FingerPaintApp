@@ -26,4 +26,23 @@
     [self.palletView clear];
 }
 
+- (IBAction)redButton:(UIButton *)sender {
+    [self.palletView changeColor:[UIColor redColor]];
+    NSLog(@"red pressed");
+}
+
+- (IBAction)greenButton:(UIButton *)sender {
+    [self.palletView changeColor:[UIColor greenColor]];
+}
+
+- (IBAction)blackButton:(id)sender {
+    [self.palletView changeColor:[UIColor blackColor]];
+}
+
+- (IBAction)eraseButton:(id)sender {
+    [self.palletView changeColor:[UIColor whiteColor]];
+}
+
+
+
 @end

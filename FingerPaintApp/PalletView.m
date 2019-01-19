@@ -13,6 +13,7 @@
 
 @property (nonatomic) NSMutableArray<LineSegmentDataModel *> *arrayOfPointers;
 
+
 @end
 
 //====================================================================================================
@@ -62,10 +63,9 @@
 
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *drawPath = [UIBezierPath bezierPath];
-    drawPath.lineWidth = 10.0;
+    drawPath.lineWidth = 5.0;
     drawPath.lineCapStyle = kCGLineCapRound;
-    UIColor *black = [UIColor blackColor];
-    [black setStroke];
+    [self.color setStroke];
     
     // loop through all elelcments in the segment array and draw each line
     for (LineSegmentDataModel *segment in self.arrayOfPointers) {
@@ -79,6 +79,8 @@
     }
     [drawPath stroke];
 }
+
+//===================================Clear page method===============================================
 
 - (void)clear
 {

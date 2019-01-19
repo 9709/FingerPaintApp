@@ -19,30 +19,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbl-FF-4MT" customClass="PalletView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="730"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="734" id="xfv-xI-dQL"/>
+                                    <constraint firstAttribute="height" constant="730" id="xfv-xI-dQL"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-mD-B0P">
-                                <rect key="frame" x="158" y="742" width="59" height="59"/>
+                                <rect key="frame" x="158" y="738" width="59" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="5F5-dm-Y50"/>
                                     <constraint firstAttribute="height" constant="59" id="6AJ-De-OBt"/>
                                 </constraints>
-                                <state key="normal" title="CLEAR" image="Eraser-3-512"/>
+                                <state key="normal" title="CLEAR" image="Clear button"/>
                                 <connections>
                                     <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="6UZ-Tp-hMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2F-dW-GNS" userLabel="Red button">
+                                <rect key="frame" x="24" y="738" width="59" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="fbu-6L-dgz"/>
+                                    <constraint firstAttribute="width" constant="59" id="g99-Jw-G2h"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Red button"/>
+                                <connections>
+                                    <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDH-hu-9yD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qt-b0-4Nh" userLabel="Green button">
+                                <rect key="frame" x="91" y="738" width="59" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="bZD-ON-idO"/>
+                                    <constraint firstAttribute="width" constant="59" id="jCJ-GI-RUp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Green button"/>
+                                <connections>
+                                    <action selector="greenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPP-Fb-EJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky7-qY-rpy">
+                                <rect key="frame" x="298" y="738" width="59" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="7lr-dT-UcU"/>
+                                    <constraint firstAttribute="width" constant="59" id="miF-Lr-71i"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Erase button"/>
+                                <connections>
+                                    <action selector="eraseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qah-fk-gyy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqy-T4-luY">
+                                <rect key="frame" x="225" y="732" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6hv-gk-fAD"/>
+                                    <constraint firstAttribute="width" constant="70" id="nxy-hZ-FGr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Black button"/>
+                                <connections>
+                                    <action selector="blackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cI-dC-Oic"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RYd-mD-B0P" firstAttribute="top" secondItem="Gbl-FF-4MT" secondAttribute="bottom" constant="8" id="58e-GQ-yHz"/>
+                            <constraint firstItem="Oqy-T4-luY" firstAttribute="top" secondItem="Gbl-FF-4MT" secondAttribute="bottom" constant="2" id="6Cs-Du-AWr"/>
+                            <constraint firstItem="5Qt-b0-4Nh" firstAttribute="top" secondItem="Gbl-FF-4MT" secondAttribute="bottom" constant="8" id="Dhm-Eb-Nsv"/>
                             <constraint firstItem="Gbl-FF-4MT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EKo-Zo-Hyo"/>
+                            <constraint firstItem="RYd-mD-B0P" firstAttribute="leading" secondItem="5Qt-b0-4Nh" secondAttribute="trailing" constant="8" id="GfS-12-hEo"/>
                             <constraint firstItem="Gbl-FF-4MT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Own-Ol-rTW"/>
+                            <constraint firstItem="ky7-qY-rpy" firstAttribute="top" secondItem="Gbl-FF-4MT" secondAttribute="bottom" constant="8" id="R2H-iB-n28"/>
+                            <constraint firstItem="5Qt-b0-4Nh" firstAttribute="leading" secondItem="g2F-dW-GNS" secondAttribute="trailing" constant="8" id="ath-dz-WTY"/>
+                            <constraint firstItem="ky7-qY-rpy" firstAttribute="leading" secondItem="Oqy-T4-luY" secondAttribute="trailing" constant="3" id="cYx-Cx-6YN"/>
                             <constraint firstItem="Gbl-FF-4MT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hr1-de-VEQ"/>
+                            <constraint firstItem="g2F-dW-GNS" firstAttribute="top" secondItem="Gbl-FF-4MT" secondAttribute="bottom" constant="8" id="nCp-Ec-7HT"/>
+                            <constraint firstItem="Oqy-T4-luY" firstAttribute="leading" secondItem="RYd-mD-B0P" secondAttribute="trailing" constant="8" id="sOa-GD-EyM"/>
                             <constraint firstItem="RYd-mD-B0P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycd-6H-WMq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,6 +109,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Eraser-3-512" width="512" height="512"/>
+        <image name="Black button" width="256" height="256"/>
+        <image name="Clear button" width="512" height="512"/>
+        <image name="Erase button" width="512" height="512"/>
+        <image name="Green button" width="256" height="256"/>
+        <image name="Red button" width="2000" height="2000"/>
     </resources>
 </document>

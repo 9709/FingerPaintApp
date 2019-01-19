@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PalletView : UIView
 
+@property UIColor *color;
+
 - (void)clear;
+- (void)changeColor: (UIColor *)selectColor;
 
 @end
 
